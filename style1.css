@@ -1,0 +1,1017 @@
+:root {
+    --shadow: 0 1px 5px rgb(0, 0, 0);
+    --shadow1: 0 1px 5px rgba(255, 255, 255, 0.8);
+}
+
+
+html,
+body {
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: linear-gradient(to right, #ac07ee, #08c0ee);
+    box-sizing: border-box;
+    position: fixed;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 84px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.navbar ul {
+    display: flex;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.navbar ul div {
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+    width: 11rem;
+    height: 2rem;
+    box-shadow: var(--shadow);
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 3rem 0rem 1rem;
+    padding: 0.3rem 2rem;
+    border-radius: 0.3rem;
+}
+
+.navbar ul div:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar ul div i {
+    margin-right: 0.4rem;
+}
+
+.navbar ul div:hover i {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.navbar ul li a {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+
+.navbar ul div:hover a {
+    font-size: 1.4rem;
+    color: black;
+}
+
+
+/* navbar2 section  */
+
+.navbar2 {
+    display: none;
+    background: linear-gradient(to right, #ac07ee, #08c0ee);
+    box-sizing: border-box;
+    position: fixed;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 85px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0.9;
+    background-color: #333;
+}
+
+.navbar2>a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 21rem;
+    margin-top: 0.6rem;
+    font-size: 1.6rem;
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+    z-index: 1;
+    right: 0.8rem;
+    text-align: right;
+    top: 5rem;
+}
+
+.dropdown-content a {
+    float: none;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(184, 184, 184);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Homepage section  */
+#services {
+    height: 38rem;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    top: 5.2rem;
+    left: 0px;
+    background: linear-gradient(to right, #ac07ee, #08c0ee);
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#services form {
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+
+}
+
+#services form div {
+    display: flex;
+    margin: 1rem 1rem;
+}
+
+#services h2 {
+    color: white;
+}
+
+#services form img {
+    width: 20rem;
+    height: 10rem;
+}
+
+#services form input {
+    font-family: 'Acme', sans-serif;
+    background-color: inherit;
+    color: #ffffff;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    width: 8rem;
+    height: 2rem;
+}
+
+#services form input:hover {
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#services aside {
+    width: 31rem;
+    height: 33rem;
+}
+
+
+/* services section */
+#container {
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(138, 132, 132);
+    width: 100%;
+    height: 60rem;
+    top: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container .box-container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 65%;
+    padding: 2rem 0rem;
+    height: 42rem;
+}
+
+#container .heading {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 5rem;
+    font-size: 2rem;
+}
+
+#container .heading h1 {
+    width: 80%;
+}
+
+#container .box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    width: 9rem;
+    height: 13rem;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+#container .box:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgb(94, 90, 90);
+}
+
+#container div img {
+    width: 6rem;
+    height: 6rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#container .box:hover img {
+    width: 7rem;
+    height: 7rem;
+}
+
+#container div h3 {
+    color: rgb(0, 0, 0);
+}
+
+/* Investment Plans section */
+.base-btn1 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 30px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0px;
+    transition: all 0.3s ease-in;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+.base-btn1:hover {
+    background: linear-gradient(to top, #4A00E0, #8E2DE2);
+    color: #fff;
+}
+
+.base-btn1 i {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+
+/* Investment section  */
+#pricing2 {
+    width: 100%;
+    height: 110rem;
+    padding: 121px 0px 130px;
+    position: relative;
+    /* border: 3px solid brown; */
+    border-bottom: 1px solid rgb(138, 132, 132);
+    box-sizing: border-box;
+    top: 0rem;
+}
+
+#pricing2 .section-heading {
+    margin-bottom: 55px;
+}
+
+#pricing2 .section-heading h1 {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+#pricing2 .section-heading p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#pricing2 .tab-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricing2 .tab-content h2 {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 9rem;
+}
+
+#pricing2 .tab-content .row {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem 0rem;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 7rem;
+}
+
+
+#pricing2 .tab-content .col-lg-4 {
+    padding: 1rem 1rem;
+    text-align: center;
+    width: 21rem;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+
+}
+
+#pricing2 .tab-menu {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 6rem;
+}
+
+#pricing2 .tab-menu #my-tab {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+#pricing2 .tab-menu #my-tab .nav-item {
+    display: inline-block;
+}
+
+#pricing2 .tab-menu #my-tab .nav-item .nav-link {
+    margin-bottom: 7px;
+    margin-left: 0px;
+    margin-right: 40px;
+    list-style: none;
+    display: inline-block;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+
+#pricing2 .tab-menu #my-tab .nav-item .nav-link:hover {
+    color: #fff;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+}
+
+#pricing2 .price-box {
+    text-align: center;
+    padding: 22px 30px 30px;
+    position: relative;
+    background: #fff;
+    transition: all 0.3s ease-in;
+    box-shadow: var(--shadow);
+}
+
+.pricing2 .price-box .price-title .heading-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+#pricing2 .price-box .price-rate {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 17px 18px;
+    margin: 24px -13px 17px;
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+#pricing2 .price-box .price-rate i {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    font-size: 65px;
+    opacity: 0.2;
+    transform: rotate(20deg);
+}
+
+#pricing2 .price-box .price-rate .price {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#pricing2 .price-box .service-feature .service-feature-list {
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+#pricing2 .price-box .service-feature .service-feature-list li p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 38px;
+}
+
+#pricing2 .price-box .buy-btn-wrapper {
+    margin-top: 20px;
+    display: block;
+}
+
+#pricing2 .price-box:hover {
+    box-shadow: 0px 10px 30px rgb(126, 125, 125);
+    transform: translateY(-5px);
+}
+
+/* About us scontainer */
+#About-us {
+    top: 0rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    margin: 3rem 0rem;
+    border-bottom: 1px solid rgb(138, 132, 132);
+}
+
+#About-us .About-us-heading {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 80%;
+}
+
+#About-us .About-us-heading h1 {
+    font-size: 3rem;
+}
+
+#About-us .About-us-heading p {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 80%;
+}
+
+#About-us #About-us-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 48rem;
+}
+
+#About-us #About-us-container aside {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#About-us #About-us-container aside div p {
+    text-align: center;
+}
+
+#About-us #About-us-container aside div h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#About-us div img {
+    width: 32rem;
+    height: 25rem;
+}
+
+#About-us #About-us-container .container1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+    height: 8rem;
+}
+
+
+#About-us #About-us-container .container1 i {
+    width: 6rem;
+    height: 4rem;
+}
+
+#About-us #About-us-container .container2 {
+    width: 33rem;
+}
+
+#About-us #About-us-container .container2 p {
+    text-align: center;
+    width: 80%;
+    height: 3rem;
+    margin-top: -1rem;
+}
+
+
+/* contact-us section  */
+#Contact-us {
+    position: relative;
+    box-sizing: border-box;
+    top: 2rem;
+    width: 100%;
+    height: 43rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#Contact-us #container3 {
+    width: 40rem;
+    height: 30rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ac07ee, #08c0ee);
+    border-radius: 2rem;
+}
+
+#Contact-us h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+#Contact-us #form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 1rem 5rem;
+    font-size: 1.5rem;
+    color: white;
+    outline: none;
+
+}
+
+#Contact-us #form .contact {
+    padding: 0.8rem;
+}
+
+#Contact-us #form .submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+}
+
+#Contact-us .contact input,
+textarea {
+    border-radius: 0.5rem;
+    width: 20rem;
+    outline: none;
+}
+
+#Contact-us input[type=submit] {
+    width: 6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    box-shadow: var(--shadow);
+}
+
+#Contact-us input[type=submit]:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* footer  */
+footer {
+    box-sizing: border-box;
+    position: relative;
+    top: 2rem;
+    background: linear-gradient(to right, #ac07ee, #08c0ee);
+    color: white;
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 4rem;
+}
+
+
+/* media quiries */
+@media(max-width: 1500px) {
+
+    #container .box-container {
+        box-sizing: border-box;
+        width: 70%;
+    }
+
+    #About-us div img {
+        display: none;
+    }
+
+    #About-us #About-us-container aside {
+        width: 98%;
+        height: 30rem;
+        flex-flow: row wrap;
+    }
+}
+
+@media(max-width: 1250px) {
+    #container .box-container {
+        width: 87%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .navbar ul div i {
+        display: none;
+    }
+}
+@media(max-width: 1100px) {
+    #pricing2 .tab-content .col-lg-4 {
+        padding: 1rem 1rem;
+        width: 17rem;
+    }
+}
+
+@media(max-width: 1024px) {
+    .navbar ul {
+        padding: 0rem 5rem;
+    }
+    .navbar ul div {
+        width: 8rem;
+    }
+    #pricing2 .tab-content .col-lg-4 {
+        padding: 1rem 1rem;
+        width: 17rem;
+    }
+}
+
+@media(max-width: 950px) {
+    #container {
+        height: 80rem;
+    }
+    #container .box-container {
+    height: 54rem;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .navbar {
+        display: none;
+    }
+    .navbar2 {
+        display: block;
+        width: 100%;
+    }
+    #services aside {
+        display: none;
+    }
+    .background {
+        height: 30rem;
+    }
+    .background form {
+        background-color: #000000;
+        width: 12rem;
+        height: 13rem;
+        font-size: 0.6rem;
+    }
+    .background aside {
+        width: 21rem;
+        height: 21rem;
+    }
+    #container {
+        height: 43rem;
+    }
+    #container .box {
+        width: 7rem;
+        height: 10rem;
+        margin: 1rem 0.5rem;
+    }
+    #container .box-container {
+        padding: 5rem 0rem;
+        height: 35rem;
+        margin-top: -6rem;
+    }
+    #pricing2 {
+        height: 210rem;
+    }
+    #pricing2 .tab-content .row {
+        flex-flow: column wrap;
+    }
+    #pricing2 .tab-content h2 {
+        display: none;
+    }
+    #pricing2 .tab-content .col-lg-4 {
+        width: 34rem;
+    }
+    #About-us {
+        height: 70rem;
+    }
+    #About-us .About-us-heading {
+        margin-top: 3rem;
+    }
+    #About-us #About-us-container .container2 {
+        width: 33rem;
+    }
+    #About-us #About-us-container aside div h1 {
+        margin-top: -5rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .navbar2>a {
+        margin-left: 14rem;
+    }
+    #container {
+        height: 76rem;
+    }
+    #container .box-container {
+        height: 62rem;
+    }
+    #pricing2 .tab-content .col-lg-4 {
+        width: 28rem;
+    }
+    #About-us {
+        height: 80rem;
+    }
+    #About-us .About-us-heading {
+        margin-top: 3rem;
+    }
+    #About-us #About-us-container .container2 {
+        width: 20rem;
+    }
+    #About-us #About-us-container .container1 {
+        height: 11rem;
+    }
+    #About-us #About-us-container aside div h1 {
+        margin-top: -5rem;
+    }
+    #About-us #About-us-container .container2 p {
+        height: 4rem;
+    }
+    #Contact-us {
+        height: 30rem;
+        top: -3rem;
+    }
+    #Contact-us #container3 {
+        width: 80%;
+        height: 22rem;
+    }
+    #Contact-us .contact input,
+    textarea {
+        width: 70%;
+    }
+
+    #Contact-us #form {
+        margin: 1rem 1rem;
+        font-size: 1.5rem;
+        color: white;
+        width: 90%;
+    }
+
+    #Contact-us h1 {
+        font-size: 2rem;
+        color: white;
+        margin-left: -1rem;
+    }
+
+    #Contact-us #form .contact {
+        padding: 0.8rem;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    #Contact-us #form .submit-btn {
+        width: 10rem;
+        margin-left: 7rem;
+    }
+    footer {
+        top: 0rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .navbar2>a {
+        margin-left: 10rem;
+    }
+    #pricing2 .tab-content .col-lg-4 {
+        width: 22rem;
+    }
+    #About-us #About-us-container .container1 i {
+        display: none;
+    }
+    #About-us #About-us-container .container2 {
+        text-align: center;
+    }
+    #About-us #About-us-container .container2 p {
+        margin-left: 2rem;
+    }
+    #Contact-us #container3 {
+        width: 90%;
+        height: 22rem;
+    }
+
+    #Contact-us #form {
+        align-items: center;
+        margin: 1rem 1rem;
+        font-size: 1.5rem;
+        color: white;
+        width: 90%;
+    }
+    #Contact-us h1 {
+        font-size: 2.2rem;
+        color: white;
+        margin-left: 0rem;
+    }
+    #Contact-us #form .contact {
+        padding: 0.8rem;
+        margin-left: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 81%;
+    }
+    #Contact-us #form .submit-btn {
+        width: 10rem;
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 400px) {
+    .navbar2>a {
+        margin-left: 8.3rem;
+    }
+    #services form {
+        width: 70%;
+    }
+    #pricing2 {
+        height: 216rem;
+    }
+    #pricing2 .tab-content .col-lg-4 {
+        width: 19rem;
+    }
+    #Contact-us #container3 {
+        width: 90%;
+        height: 33rem;
+    }
+    #Contact-us .contact input,
+    textarea {
+        width: 60%;
+    }
+    #container .box-container {
+        width: 95%;
+    }
+}
+
+@media(max-width: 350px) {
+    .navbar2>a {
+        margin-left: 7rem;
+    }
+    .dropdown .dropbtn {
+        margin-right: 1rem;
+    }
+    #services {
+        height: 30rem;
+    }
+    #services form {
+        height: 22rem;
+        width: 12rem;
+    }
+    #container {
+        height: 150rem;
+    }
+    #container .box-container {
+        margin-top: -65rem;
+        height: 62rem;
+    }
+    #container .heading {
+        margin-top: -68rem;
+    }
+    #pricing2 .tab-content .col-lg-4 {
+        width: 16rem;
+    }
+    #Contact-us{
+        margin-top: 6rem;
+    }
+    #About-us {
+        height: 90rem;
+    }
+    #About-us #About-us-container .container1 {
+        width: 90%;
+    }
+    #About-us #About-us-container .container2 p {
+        margin-left: 1rem;
+        height: 6rem;
+    }
+}
+
+@media(max-width: 320px) {
+    .navbar2>a {
+        margin-left: 5.5rem;
+    }
+    #services {
+        height: 38rem;
+    }
+    #services form img {
+        width: 15rem;
+        height: 10rem;
+    }
+    #services form {
+        height: 24rem;
+        width: 11rem;
+    }
+    #pricing2 .tab-content .col-lg-4 {
+        width: 15rem;
+    }
+    #Contact-us .contact input, textarea {
+        width: 49%;
+    }
+}
+@media(max-width: 320px) {
+    .navbar2>a {
+        margin-left: 4.5rem;
+    }
+    #pricing2 {
+        height: 245rem;
+    }
+    #pricing2 .tab-content .col-lg-4 {
+        width: 12rem;
+    }
+    #services form {
+        width: 9rem;
+    }
+}
